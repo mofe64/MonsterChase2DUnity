@@ -99,7 +99,8 @@ public class Player : MonoBehaviour
         */
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            /*Add force applies a force to the rigidbody of gameobject 
+            /*
+                Add force applies a force to the rigidbody of gameobject 
                 In general the result of addforce is a chaneg in velocity of game obj (is acceleration)
                 ForceMode2d.impulse denotes an instant force
                 force is applied to the rigid body via the objects mass
