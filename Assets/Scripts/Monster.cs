@@ -12,7 +12,6 @@ public class Monster : MonoBehaviour
     private void Awake()
     {
         monsterBody = GetComponent<Rigidbody2D>();
-        speed = 5;
     }
 
     void Start()

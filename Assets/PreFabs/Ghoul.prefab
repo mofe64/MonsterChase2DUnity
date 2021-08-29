@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5805266571489074369}
   - component: {fileID: 5805266571489074368}
   - component: {fileID: 5805266571489074371}
-  - component: {fileID: 5805266571489074370}
   - component: {fileID: 5805266571489074429}
+  - component: {fileID: 5820814428142128079}
   - component: {fileID: 738672740}
   m_Layer: 0
   m_Name: Ghoul
@@ -105,32 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &5805266571489074370
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5805266571489074428}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.19018388, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 2.11}
-    newSize: {x: 1.29, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9096322, y: 2.11}
-  m_EdgeRadius: 0
 --- !u!50 &5805266571489074429
 Rigidbody2D:
   serializedVersion: 4
@@ -152,6 +126,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &5820814428142128079
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5805266571489074428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17092228, y: 0.027969003}
+  m_Size: {x: 0.7989869, y: 2.0540617}
+  m_Direction: 0
 --- !u!114 &738672740
 MonoBehaviour:
   m_ObjectHideFlags: 0

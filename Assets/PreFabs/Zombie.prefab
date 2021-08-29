@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4044791557901170805}
   - component: {fileID: 4044791557901170806}
   - component: {fileID: 4044791557901170807}
-  - component: {fileID: 4044791557901170808}
   - component: {fileID: 4044791557901170809}
+  - component: {fileID: 6968658145480921456}
   - component: {fileID: 2034623739}
   m_Layer: 0
   m_Name: Zombie
@@ -105,32 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &4044791557901170808
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4044791557901170810}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.187258, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 2.11}
-    newSize: {x: 1.29, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.91548395, y: 2.11}
-  m_EdgeRadius: 0
 --- !u!50 &4044791557901170809
 Rigidbody2D:
   serializedVersion: 4
@@ -152,6 +126,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &6968658145480921456
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044791557901170810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17713761, y: 0.055938125}
+  m_Size: {x: 0.7865567, y: 1.9981234}
+  m_Direction: 0
 --- !u!114 &2034623739
 MonoBehaviour:
   m_ObjectHideFlags: 0
