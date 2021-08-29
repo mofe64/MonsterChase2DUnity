@@ -22,7 +22,8 @@ public class MonsterSpawner : MonoBehaviour
 
     IEnumerator SpawnMonsters()
     {
-        while (true)
+        while (true) //we use a while loop to continually execute this logic, as long as game runs we will spawn monsters, 
+        //if we didnt have a while loop, it would only be executed once, since we are calling it in the start func
         {
             yield return new WaitForSeconds(Random.Range(1, 5));
             randomIndex = Random.Range(0, monsterReference.Length);

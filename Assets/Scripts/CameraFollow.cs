@@ -22,6 +22,10 @@ public class CameraFollow : MonoBehaviour
     //player animations have been rendered
     void LateUpdate()
     {
+        if (!player)
+        { //if player obj has been destroyed, does not exist, return
+            return;
+        }
         //get current position of the camera
         tempPosition = transform.position;
         //set x prop on camera position to be equal to player game obj x prop

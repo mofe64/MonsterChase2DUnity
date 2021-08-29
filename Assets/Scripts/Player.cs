@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     private Animator anim;
     private string WALK_ANIMATION = "walk";
     private string GROUND_TAG = "Ground";
+    private string MONSTER_TAG = "Monster";
 
     private void Awake()
     {
@@ -119,6 +120,21 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
+        }
+
+        if (other.gameObject.CompareTag(MONSTER_TAG))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+    //Detects collisions with trigger colliders
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag(MONSTER_TAG))
+        {
+            Destroy(gameObject);
         }
     }
 }
